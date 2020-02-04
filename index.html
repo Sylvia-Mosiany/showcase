@@ -1,0 +1,115 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>3D with CSS</title>
+        <meta name="description" content="3D with CSS">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="manifest" href="site.webmanifest">
+        <link rel="apple-touch-icon" href="icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link href="https://fonts.googleapis.com/css?family=Dosis|Mina|Nunito|" rel="stylesheet">
+    </head>
+    <body>
+        <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+      <header class="header">
+          <h1>3D with CSS</h1>
+          <h2>Showcase of 3D Transformations with CSS</h2>
+      </header>
+      <main>
+        <div class="introduction">
+            <h2>Introduction</h2>
+            <p>3D in CSS is achieved by manipulating code to transform objects along the three vertices: the x, the y and z vertices, allowing the display of objects in 3D.This allows for objects to be displayed in a wide range of ways, adding interesting features on a webpage.</p>
+        </div>
+         <div class="rotation">
+            <h2>Rotation</h2>
+             <div class="spinner" id="stage">
+            <h2>This is a rotation</h2>
+        </div>
+            <div class=column><p>Using keyframes, objects can be rotated along a specific axis. First, keyframes need to be set that define the way an object rotates. Next, a 'stage' is set for the object rotating which allows for the element to move and rotate in relation to this stage, which itself remains fixed to the page.</p> </div>
+            <div class="column"><p>Finally, timing is applied to the element that is rotating allowing for a transition timing function to be applied to this element. In this example above, there is a pause when you hover over the transformation with a mouse.</p> </div>
+        </div>
+        <div class="cube">
+            <div class="cubecolumn">
+        <h2>Cube</h2>
+        <p>Using CSS a 3D cube can also be flipped, allowing for there to be a display of a form in three dimensions. </p>
+        </div>
+      <div class="container">
+        <div id="cube">
+        <div class="front">1</div>
+        <div class="back">2</div>
+        <div class="right">3</div>
+        <div class="left">4</div>
+        <div class="top">5</div>
+        <div class="bottom">6</div>
+  </div>
+</div>
+    <div class="cardflip">
+        <h2>Card Flip</h2>
+        <p>It is possible to create a Card Flip with CSS. Hover over the image below to flip the card over.</p>
+        <div class="card-container">
+            <div class="card">
+                <div class="side"> <img src="img/desert.jpg"></div>
+                <div class="side back"><p>This is a desert</p></div>
+            </div>
+        </div>
+    </div>
+        <div>
+            <h2>Photo Carousel</h2>
+            <p>A carousel of images can be set up using 3D transformation in CSS. As shown below, the images are arranged in a 3D space and circle around an axis. This is achieved by rotating each image in incriments of 40 degrees since there are 9 images and 360 degrees make a circle.Each triangle/piece would be a slide, hence 9 pieces.</p>
+        <div class="carousel_wrapper">
+  <div class="carousel">
+    <div class="slide one">
+      <img src="img/beach.jpeg"  alt="Beach">
+    </div>
+    <div class="slide two">
+      <img src="img/alps.jpg" alt="Alps">
+    </div>
+    <div class="slide three">
+       <img src="img/meadow.jpg" alt="Meadow">
+    </div>
+    <div class="slide four">
+    <img src="img/rainforest.jpg" alt="Rainforest">
+    </div>
+    <div class="slide five">
+  <img src="img/rocks.jpg" alt="Rocks">
+    </div>
+    <div class="slide six">
+      <img src="img/savannah.jpg" alt="Savannah">
+    </div>
+    <div class="slide seven">
+      <img src="img/sunset.jpg" alt="Sunset">
+    </div>
+    <div class="slide eight">
+  <img src="img/desert.jpg" alt="Desert">
+    </div>
+    <div class="slide nine">
+      <img src="img/volcano.jpg" alt="Volcano">
+    </div>
+  </div><!-- / .carousel -->
+</div><!-- / .carousel_wrapper -->
+
+      </main>
+              <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+        <script>
+            window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+            ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
+        </script>
+        <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+    </body>
+</html>
